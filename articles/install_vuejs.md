@@ -30,7 +30,11 @@ Vue.jsは、既存のWebサイトに組み込んで使うことができます�
 
 ## Vue-CLIで、アプリケーションを作成する
 
-次は、Vue.jsを使って、Webアプリケーションを作ります。これには、Vue-CLIを使います。
+次は、Vue.jsを使って、Webアプリケーションを作ります。
+
+### vue-cliをインストールする
+
+これには、Vue-CLIを使います。
 
 - Vue CLI
   https://cli.vuejs.org/
@@ -42,13 +46,19 @@ $ npm install -g @vue/cli
 $ vue --version
 ```
 
+### vue-cliで、アプリケーションを作成する
+
 アプリケーションを作成します。
 
 ```
 $ vue create vue-app
 ```
 
-たったこれだけ。どの環境で作るか、メニュー形式で選択できるので、順番に答えていきます。最初は、デフォルトの選択肢を選べばいいんじゃないかな。
+たったこれだけ。
+
+どの環境で作るか、メニュー形式で選択できるので、順番に答えていきます。最初は、デフォルトの選択肢を選べばいいんじゃないかな。
+
+### 動作確認
 
 できたアプリケーションをローカル環境で起動してみます。
 
@@ -68,11 +78,15 @@ $ yarn serve
 
 ![./images/install_vuejs/first_app.png](https://storage.googleapis.com/zenn-user-upload/jc3y8yut1uh9twgizscvpyixsdf8)
 
+vue-app ディレクトリは、GitHub にリポジトリを作って格納しておきましょう。
+
 ## GitHub Pagesでデプロイする
 
-では、Webアプリを静的サイトとして生成して、GitHub Pagesで公開してみましょう。
+では、Webアプリを静的サイトとして生成して、GitHub Pagesで公開してみましょう。GitHub Pagesには、個人のユーザーアカウントにひもづくページと、リポジトリにひもづくページがあります。今回は、リポジトリに対して作成します。
 
-GitHub Pagesは、docsディレクトリか、gh-pagesブランチのファイルを出力するので、リポジトリのホームディレクトリに、vue.config.js というファイルを作成して、次のように書き込みます。
+### ビルドする
+
+GitHub Pagesは、docsディレクトリか、gh-pagesブランチのファイルを出力します。今回は、docsディレクトリの内容を表示します。そこで、リポジトリのホームディレクトリに、vue.config.js というファイルを作成して、次のように書き込みます。
 
 vue.config.js 
 ```js
@@ -105,10 +119,31 @@ $ yarn build
 
 これで、docs ディレクトリに静的ファイルが生成されました。
 
+GitHubに、docsディレクトリごとコミットします。
+
+### GitHub Pagesを設定する
+
+1. GitHubで、対象のリポジトリにアクセスする
+2. 上部の「Settings」をクリック
+3. Pagesタブを選択
+4. Source として、Masterブランチのdocs ディレクトリを選択する
+5. Save ボタンをクリック
+
+![./images/install_vuejs/github_pages_settings.png](https://storage.googleapis.com/zenn-user-upload/naobyx3fvqsjscorgmcxncgxyp6v)
+
+
+## 公開したアプリ
+
+これで、vue.jsで作成したアプリケーションを、GitHub Pagesで公開できました。
+
+- GitHub：ycatch/vue-app
+  https://github.com/ycatch/vue-app
+
+- GitHub Pages
+  https://ycatch.github.io/vue-app/
 
 
 ## 参考になるページ
-
 
 - Vue.js の"The Progressive Framework"という設計思想がすごく刺さった
   https://snowlong.hatenablog.com/entry/2017/03/27/190715
