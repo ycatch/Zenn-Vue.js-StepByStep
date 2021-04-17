@@ -2,8 +2,8 @@
 title: "Vue.jsでアプリを作って、GitHub Pagesでデプロイする：Vue.js Step by Step"
 emoji: "🤖"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: ["Vuejs", "Vue CLI"]
-published: false
+topics: ["Vuejs","Vue CLI"]
+published: true
 ---
 
 [Vue.js](https://v3.ja.vuejs.org/)は、フロントエンド開発フレームワークです。2020年9月に、Vue 3.0が公開されました。
@@ -80,6 +80,31 @@ $ yarn serve
 
 vue-app ディレクトリは、GitHub にリポジトリを作って格納しておきましょう。
 
+## 双方向バインディング
+
+先ほどの公式サイトのチュートリアルにもあった、双方向バインディングをやってみましょう。[ユーザー入力の制御](https://v3.ja.vuejs.org/guide/introduction.html#%E3%83%A6%E3%83%BC%E3%82%B5%E3%82%99%E3%83%BC%E5%85%A5%E5%8A%9B%E3%81%AE%E5%88%B6%E5%BE%A1)の2番目の例のように、フォームの入力内容をテキストに反映します。
+
+これは、/src/components/HelloWorld.vueを次のように修正します。ここでは"<h1>{{ msg }}</h1>"の下に、"<input v-model="msg" />"を追加しています。
+
+/src/components/HelloWorld.vue
+```js
+<template>
+  <div class="hello">
+    <h1>{{ msg }}</h1>
+    <input v-model="msg" />
+    <p>
+      For a guide and recipes on how to configure / customize this project,<br>
+      check out the
+      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
+    </p>
+// ...
+```
+
+これで、ローカル環境で入力フォームのテキストを修正すると、すぐ上の見出しに反映されます。
+
+![./images/install_vuejs/vue_example.png](https://storage.googleapis.com/zenn-user-upload/vc85y44hcfh7atkkkzc9daghmjz5)
+
+
 ## GitHub Pagesでデプロイする
 
 では、Webアプリを静的サイトとして生成して、GitHub Pagesで公開してみましょう。GitHub Pagesには、個人のユーザーアカウントにひもづくページと、リポジトリにひもづくページがあります。今回は、リポジトリに対して作成します。
@@ -136,11 +161,11 @@ GitHubに、docsディレクトリごとコミットします。
 
 これで、vue.jsで作成したアプリケーションを、GitHub Pagesで公開できました。
 
-- GitHub：ycatch/vue-app
-  https://github.com/ycatch/vue-app
-
 - GitHub Pages
   https://ycatch.github.io/vue-app/
+
+- GitHub：ycatch/vue-app
+  https://github.com/ycatch/vue-app
 
 
 ## 参考になるページ
