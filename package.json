@@ -1,0 +1,23 @@
+{
+  "name": "Zenn-Vue.js-StepByStep",
+  "version": "1.0.0",
+  "description": "Vue.js を使っていく手順をメモっていきます。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ycatch/Zenn-Vue.js-StepByStep.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ycatch/Zenn-Vue.js-StepByStep/issues"
+  },
+  "homepage": "https://github.com/ycatch/Zenn-Vue.js-StepByStep#readme",
+  "dependencies": {
+    "zenn-cli": "^0.1.79"
+  }
+}
