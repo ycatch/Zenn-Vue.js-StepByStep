@@ -2,7 +2,7 @@
 title: "Vue.jsでアプリを作って、GitHub Pagesでデプロイする：Vue.js Step by Step"
 emoji: "🤖"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: ["Vuejs","Vue CLI"]
+topics: ["Vuejs","Vue CLI","GitHub Pages"]
 published: true
 ---
 
