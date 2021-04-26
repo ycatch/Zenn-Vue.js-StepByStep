@@ -8,7 +8,7 @@ published: false
 
 サーバーレスアーキテクチャやサーバーレスコンピューティングについて調べていると、フロントエンドエンジニアとバックエンドエンジニアで、そのイメージが違っているような気がしています。
 
-![ServerLess2.png](images/what_is_serverless/Serverless2.png)
+![フロントエンドエンジニアとバックエンドエンジニアによる、サーバーレスのイメージ](https://storage.googleapis.com/zenn-user-upload/8hryi4djhfea4opngehd3kzwhld0)
 
 ## フロントエンドエンジニアの場合
 
