@@ -3,7 +3,7 @@ title: "Vutifiy and Vee-Validation：Vue.js Step by Step"
 emoji: "🤖"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["vuejs","vutifiy","vee-validation"]
-published: true
+published: false
 ---
 
 [Vue.js](https://v3.ja.vuejs.org/)は、フロントエンド開発フレームワークです。2020年9月に、Vue 3.0が公開されました。
