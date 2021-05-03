@@ -8,13 +8,16 @@ published: true
 
 [Vue.js](https://v3.ja.vuejs.org/)は、フロントエンド開発フレームワークです。2020年9月に、Vue 3.0が公開されました。
 
-「Progressive Framework」という特徴があり、jQueryとか使っていた人が、段階的に導入していくことができます。
-
-なので、最新のフロントエンド開発に初めて取り組む人に、いい感じだと思います。というか、私がそうです。
-
 この記事では、Vue.jsを簡単なところから使い始めて、徐々に本格的に使う手順を記録していきます。まずは、Vue.jsの導入。Vue.jsを使い始めて、簡単なWebアプリをつくって、GitHub Pagesにデプロイするところまでやります。
 
-## 公式ページ
+## Vue.jsとは
+
+Vue.jsには、「Progressive Framework」という特徴があり、jQueryとか使っていた人が、段階的に導入していくことができます。
+
+なので、最新のフロントエンド開発に初めて取り組む人に、いい感じだと思います。
+
+というか、私がそうです。
+
 
 - Vue.js
   https://v3.ja.vuejs.org/
@@ -28,7 +31,7 @@ published: true
 
 まずは、前出の「Progressive Framework」です。図のように段階的に導入していくことができます。Vue.jsの機能は、この段階に合わせて展開されています。
 
-![./images/install_vuejs/progressive_framework.png](https://storage.googleapis.com/zenn-user-upload/lpp7wlow9tjk8hszoxhom7uhgsf1)
+![./images/install_vuejs/progressive_framework.png](https://storage.googleapis.com/zenn-user-upload/3230iw8te6vyr8xp8sin69s7ggdq)
 *[Vue.js : The Progressive Framework by Evan You](https://docs.google.com/presentation/d/1WnYsxRMiNEArT3xz7xXHdKeH1C-jT92VxmptghJb5Es) ※日本語注釈は筆者による*
 
 たとえば、最初の宣言的レンダリング(Declative Rendering)は、jQueryのような、HTMLのタグとJavatScriptの変数を1対1で対応づけるといった使い方に対応しています。このあたりは、[Vue.js Progressive Framework ](https://qiita.com/mikakane/items/3bd6af69259f5af6fecb)というQiitaの記事が詳しく解説しています。
@@ -37,15 +40,18 @@ published: true
 
 ### 2. Vue CLI を使う
 
-もうひとつはのポイントは、早い段階でビルドシステムを使ったほうが分かりやすいということです。Vue.jsは、それなりに多機能なので、段階を追って使っていくと、なかなか使いやすい感じになりません。そこで、早い段階からビルドシステムを活用できるよう、Vue CLIを使ったほうがいいと思いました。このツールから、Webpackやbrowserifyが利用できますし、各種ライブラリも組み込みできます。
+もうひとつはのポイントは、早い段階でビルドシステムを使ったほうが分かりやすいということです。
+
+Vue.jsは、それなりに機能が多いので、段階を追って使っていくと、なかなか使いやすい感じになりません。そこで、早い段階からビルドシステムを活用できるよう、Vue CLIを使ったほうがいいと思いました。このツールから、Webpackやbrowserifyが利用できますし、各種ライブラリも組み込みできます。
+
+Vue CLIでつくったアプリケーションのひな型に、段階的に機能を追加していく。というのが、学習するうえで分かりやすいと思います。
 
 - [Vue CLI](https://cli.vuejs.org/)
-
 
 ただ、Vue CLIは、Vue.jsとは別プロジェクトになっているみたいなので、Vue.jsの公式サイトやチュートリアルだけ見ていると、あまり情報がありません。[Vue CLI の公式サイト](https://cli.vuejs.org/)を見るといいと思います。
 
 
-## チュートリアル
+## Vue.jsのチュートリアルをやる
 
 Vue.jsは、既存のWebサイトに組み込んで使うことができます。これが、一番試しやすいでしょう。公式チュートリアルをやると、基本的なコードの書き方を体験できると思います。ブラウザのなかで実行できるので、お手軽です。
 
@@ -55,7 +61,7 @@ Vue.jsは、既存のWebサイトに組み込んで使うことができます�
 
 ## Vue-CLIで、アプリケーションを作成する
 
-次は、Vue.jsを使って、Webアプリケーションを作ります。
+次は、Vue CLIを使って、Vue.jsによるWebアプリケーションを作ります。
 
 ### vue-cliをインストールする
 
