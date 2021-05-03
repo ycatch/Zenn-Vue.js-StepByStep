@@ -2,7 +2,7 @@
 title: "Vue.jsでアプリを作って、GitHub Pagesでデプロイする：Vue.js Step by Step"
 emoji: "🤖"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: ["Vuejs","Vue CLI","GitHub Pages"]
+topics: ["vuejs","vue-cli","github-pages"]
 published: true
 ---
 
@@ -18,6 +18,31 @@ published: true
 
 - Vue.js
   https://v3.ja.vuejs.org/
+
+
+## 学習の流れ
+
+私ごときが言うのもなんですが、Vue.jsを学習するにはときに、大事なポイントが2つあると思います。
+
+### 1. 段階的導入を理解する
+
+まずは、前出の「Progressive Framework」です。図のように段階的に導入していくことができます。Vue.jsの機能は、この段階に合わせて展開されています。
+
+![./images/install_vuejs/progressive_framework.png](https://storage.googleapis.com/zenn-user-upload/lpp7wlow9tjk8hszoxhom7uhgsf1)
+*[Vue.js : The Progressive Framework by Evan You](https://docs.google.com/presentation/d/1WnYsxRMiNEArT3xz7xXHdKeH1C-jT92VxmptghJb5Es) ※日本語注釈は筆者による*
+
+たとえば、最初の宣言的レンダリング(Declative Rendering)は、jQueryのような、HTMLのタグとJavatScriptの変数を1対1で対応づけるといった使い方に対応しています。このあたりは、[Vue.js Progressive Framework ](https://qiita.com/mikakane/items/3bd6af69259f5af6fecb)というQiitaの記事が詳しく解説しています。
+
+チュートリアルもこの段階に従っているので、これを理解していると、いま自分がどの段階にいるのか把握しやすいと思います。
+
+### 2. Vue CLI を使う
+
+もうひとつはのポイントは、早い段階でビルドシステムを使ったほうが分かりやすいということです。Vue.jsは、それなりに多機能なので、段階を追って使っていくと、なかなか使いやすい感じになりません。そこで、早い段階からビルドシステムを活用できるよう、Vue CLIを使ったほうがいいと思いました。このツールから、Webpackやbrowserifyが利用できますし、各種ライブラリも組み込みできます。
+
+- [Vue CLI](https://cli.vuejs.org/)
+
+
+ただ、Vue CLIは、Vue.jsとは別プロジェクトになっているみたいなので、Vue.jsの公式サイトやチュートリアルだけ見ていると、あまり情報がありません。[Vue CLI の公式サイト](https://cli.vuejs.org/)を見るといいと思います。
 
 
 ## チュートリアル
@@ -175,3 +200,9 @@ GitHubに、docsディレクトリごとコミットします。
 
 - 第1回　プログレッシブフレームワーク Vue.js：Vue.js入門 ―最速で作るシンプルなWebアプリケーション｜gihyo.jp … 技術評論社
   https://gihyo.jp/dev/serial/01/vuejs/0001
+
+- Vue.js Progressive Framework - Qiita
+  https://qiita.com/mikakane/items/3bd6af69259f5af6fecb
+
+- Modern Frontend Development with Vue.js
+  https://docs.google.com/presentation/d/1WnYsxRMiNEArT3xz7xXHdKeH1C-jT92VxmptghJb5Es
