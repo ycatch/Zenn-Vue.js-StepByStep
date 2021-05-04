@@ -10,6 +10,8 @@ published: true
 
 この記事では、Vue.jsを簡単なところから使い始めて、徐々に本格的に使う手順を記録していきます。まずは、Vue.jsの導入。Vue.jsを使い始めて、簡単なWebアプリをつくって、GitHub Pagesにデプロイするところまでやります。
 
+Vue.jsで何かを作ろうとするとき、その土台を爆速で用意できると思います。
+
 ## Vue.jsとは
 
 Vue.jsには、「Progressive Framework」という特徴があり、jQueryとか使っていた人が、段階的に導入していくことができます。
@@ -17,7 +19,6 @@ Vue.jsには、「Progressive Framework」という特徴があり、jQueryと�
 なので、最新のフロントエンド開発に初めて取り組む人に、いい感じだと思います。
 
 というか、私がそうです。
-
 
 - Vue.js
   https://v3.ja.vuejs.org/
@@ -117,8 +118,8 @@ vue-app ディレクトリは、GitHub にリポジトリを作って格納し�
 
 これは、/src/components/HelloWorld.vueを次のように修正します。ここでは"<h1>{{ msg }}</h1>"の下に、"<input v-model="msg" />"を追加しています。
 
-/src/components/HelloWorld.vue
-```js
+
+```js:/src/components/HelloWorld.vue
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
@@ -142,10 +143,10 @@ vue-app ディレクトリは、GitHub にリポジトリを作って格納し�
 
 ### ビルドする
 
-GitHub Pagesは、docsディレクトリか、gh-pagesブランチのファイルを出力します。今回は、docsディレクトリの内容を表示します。そこで、リポジトリのホームディレクトリに、vue.config.js というファイルを作成して、次のように書き込みます。
+GitHub Pagesは、docsディレクトリか、gh-pagesブランチのファイルを出力します。今回は、docsディレクトリの内容を表示します。そこで、リポジトリのホームディレクトリに、vue.config.js という**ファイルを作成**して、次のように書き込みます。
 
-vue.config.js 
-```js
+
+```js:vue.config.js 
 module.exports = {
   outputDir: 'docs',
   assetsDir: './',
@@ -192,10 +193,10 @@ GitHubに、docsディレクトリごとコミットします。
 
 これで、vue.jsで作成したアプリケーションを、GitHub Pagesで公開できました。
 
-- GitHub Pages
+- デモページ(GitHub Pages)
   https://ycatch.github.io/vue-app/
 
-- GitHub：ycatch/vue-app
+- ソースコード(GitHub)
   https://github.com/ycatch/vue-app
 
 
