@@ -3,7 +3,7 @@ title: "Vutifiy and Vee-Validation：Vue.js Step by Step"
 emoji: "🤖"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["vuejs","vutifiy","veevalidation"]
-published: false
+published: true
 ---
 
 このシリーズでは、簡単なところからVue.jsを使い始めて、徐々に本格的に使う手順を記録しています。[前回](./install_vuejs.md)は、Vue.jsを導入して、Vue CLIでつくったアプリをGithub Pagesでデプロイするところまでやりました。
