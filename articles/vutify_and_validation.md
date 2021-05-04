@@ -13,7 +13,7 @@ published: true
 
 ## Vuetifyを使う
 
-Vue用UIフレームワークには、[Bootstrap](https://bootstrap-vue.org/)や[Tailwind CSS](https://www.vue-tailwind.com/)をベースにしたものなどが、いろいろな種類があります。[Vuetify](https://vuetifyjs.com/en/)の特徴は、マテリアルデザインを採用したことです。
+Vue用UIフレームワークには、[Bootstrap](https://bootstrap-vue.org/)や[Tailwind CSS](https://www.vue-tailwind.com/)をベースにしたものなど、いろいろな種類があります。[Vuetify](https://vuetifyjs.com/en/)の特徴は、マテリアルデザインを採用したことです。また、Vue.jsによるアプリケーションフレームワークNuxt.jsでも利用できます。
 
 マテリアルデザインは、Googleが提唱したデザインシステムで、GoogleのアプリやWebサービスなどに採用されています。Vuetifyを使うと、画面のレイアウトやUI部品の配置などを効率よく統一感のある形で進めることができます。
 
