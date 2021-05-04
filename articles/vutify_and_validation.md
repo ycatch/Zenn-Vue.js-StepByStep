@@ -1,5 +1,5 @@
 ---
-title: "UIフレームワーク Vutifiy とFormバリデーションライブラリ Vee-Validation を使ってみる：Vue.js Step by Step"
+title: "UIフレームワークVutifiyとバリデーションライブラリVee-Validationを使ってみる：Vue.js Step by Step"
 emoji: "🤖"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["vuejs","vutifiy","veevalidation"]
