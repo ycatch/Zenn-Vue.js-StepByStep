@@ -178,7 +178,7 @@ export default new Vuetify({
 
 ![./images/vutify_and_validation/color_theme.png](https://storage.googleapis.com/zenn-user-upload/m04o7n4g121x7l6dywkv2jfhsxtf)
 
-## Vee-Validation
+## Vee-Validationを使う
 
 Formバリデーションライブラリの[Vee-Validation](https://vee-validate.logaretm.com/)を使うと、Formに入力した値をチェックできます。Vue.jsのバージョンに合わせて、Vee-Validationのバージョンが異なるので注意してください。
 
@@ -186,7 +186,6 @@ Formバリデーションライブラリの[Vee-Validation](https://vee-validate
   https://vee-validate.logaretm.com/v3/
 - VeeValidate v4 <= Vue.js Ver.3
   https://vee-validate.logaretm.com/v4/
-
 
 
 ### 導入する
