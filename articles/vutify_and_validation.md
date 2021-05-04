@@ -1,5 +1,5 @@
 ---
-title: "UIフレームワークVutifiyとバリデーションライブラリVee-Validationを使ってみる：Vue.js Step by Step"
+title: "VutifiyとVee-Validationを使ってみる：Vue.js Step by Step"
 emoji: "🤖"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["vuejs","vutifiy","veevalidation"]
@@ -255,7 +255,7 @@ Vee-Validationを使うには、script部分に次のように記述します。
 
 エラーメッセージには、デフォルトで日本語メッセージが利用できます。
 
-![./images/vutify_and_validation/validation_ja.png](https://storage.googleapis.com/zenn-user-upload/og6lhemtvd1m6flkgun4phh79tqg)
+![./images/vutify_and_validation/validation_ja.png](https://storage.googleapis.com/zenn-user-upload/a3t704z7yjrcfs3cpl4ilvjvsa66)
 
 これは、HelloWorld.vueのscript部分を次のように記述します。
 
