@@ -20,7 +20,7 @@ Vue.jsには、「Progressive Framework」という特徴があり、jQueryと�
 
 というか、私がそうです。
 
-- Vue.js
+- Vue.js  
   https://v3.ja.vuejs.org/
 
 
@@ -162,7 +162,7 @@ $ yarn build
 | 
 |  File                                 Size                                   Gzipped
 |
-|  docs\js\chunk-vendors.ff672a17.js    89.66 KiB                              32.14 KiB
+| docs\js\chunk-vendors.ff672a17.js    89.66 KiB                              32.14 KiB
 | docs\js\app.225fd15b.js              4.58 KiB                               1.63 KiB
 | docs\css\app.fb0c6e1c.css            0.33 KiB                               0.23 KiB
 |
@@ -193,23 +193,19 @@ GitHubに、docsディレクトリごとコミットします。
 
 これで、vue.jsで作成したアプリケーションを、GitHub Pagesで公開できました。
 
-- デモページ(GitHub Pages)
+- デモページ(GitHub Pages)  
   https://ycatch.github.io/vue-app/
-
-- ソースコード(GitHub)
+- ソースコード(GitHub)  
   https://github.com/ycatch/vue-app
 
 
 ## 参考になるページ
 
-- Vue.js の"The Progressive Framework"という設計思想がすごく刺さった
+- Vue.js の"The Progressive Framework"という設計思想がすごく刺さった  
   https://snowlong.hatenablog.com/entry/2017/03/27/190715
-
-- 第1回　プログレッシブフレームワーク Vue.js：Vue.js入門 ―最速で作るシンプルなWebアプリケーション｜gihyo.jp … 技術評論社
-  https://gihyo.jp/dev/serial/01/vuejs/0001
-
-- Vue.js Progressive Framework - Qiita
+- 第1回　プログレッシブフレームワーク Vue.js：Vue.js入門 ―最速で作るシンプルなWebアプリケーション  
+  https://gihyo.jp/dev/serial/01/vuejs/0001  
+- Vue.js Progressive Framework - Qiita  
   https://qiita.com/mikakane/items/3bd6af69259f5af6fecb
-
-- Modern Frontend Development with Vue.js
+- Modern Frontend Development with Vue.js  
   https://docs.google.com/presentation/d/1WnYsxRMiNEArT3xz7xXHdKeH1C-jT92VxmptghJb5Es

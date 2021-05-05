@@ -17,10 +17,9 @@ Vue用UIフレームワークには、[Bootstrap](https://bootstrap-vue.org/)や
 
 マテリアルデザインは、Googleが提唱したデザインシステムで、GoogleのアプリやWebサービスなどに採用されています。Vuetifyを使うと、画面のレイアウトやUI部品の配置などを効率よく統一感のある形で進めることができます。
 
-- Vuetify — A Material Design Framework for Vue.js
+- Vuetify — A Material Design Framework for Vue.js  
   https://vuetifyjs.com/ja/
-
-- Vue Material Design Component Framework — Vuetify.js
+- Vue Material Design Component Framework — Vuetify.js  
   https://v2.vuetifyjs.com/ja/
 
 
