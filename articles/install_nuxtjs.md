@@ -6,7 +6,7 @@ topics: ["vuejs","nuxtjs","github-pages"]
 published: false
 ---
 
-このシリーズでは、Vue.jsを簡単なところから使い始めて、徐々に本格的に使う手順を記録しています。今回は、Vue.js製のアプリケーションフレームワークNuxt.jsを使い始める手順です。
+このシリーズでは、Vue.jsを簡単なところから使い始めて、徐々に本格的に使う手順を記録しています。今回は、Vue.js製のアプリケーションフレームワークNuxt.jsを使い始める手順です。ほとんどは[公式サイトのチュートリアル](https://ja.nuxtjs.org/docs/2.x/get-started/installation)に書いてありますが、Github Pagesにデプロイするには、ちょっと工夫が必要です。
 
 ## Nuxt.jsの特徴
 
@@ -50,15 +50,16 @@ $ cd my-nuxt-project
 $ yarn dev
 ```
 
-「http://localhost:3000/」に、こんなアプリができています。ここでは、pagesディレクトリに「inndex.vue」と「inspire.vue」というファイルがあって、そこから自動的にルーティングを設定しています。
+http://localhost:3000/ に、こんなアプリができています。ここでは、pagesディレクトリに「inndex.vue」と「inspire.vue」というファイルがあって、そこから自動的にルーティングを設定しています。
 
-my-nuxt-project.png
+![./images/install_nuxtjs/my-nuxt-project.png](https://storage.googleapis.com/zenn-user-upload/3xjfj9tkr89n3yidgajuiu4t9u48)
+
 
 ### Github Pagesでデプロイする
 
-Github Pagesでデプロイする場合、masterブランチ/docsディレクトリを公開するのが簡単だと思います。
+Nuxt.jsで作ったアプリをGithub Pagesでデプロイする場合、masterブランチのdocsディレクトリを公開するのが簡単だと思います。
 
-そのために、ビルド先をdocsにするため、nuxt.config.jsに、次のコードを追加します。
+そこで、ビルド先をdocsにするよう、nuxt.config.jsに次のコードを追加します。
 
 ```js:nuxt.config.js
   router: {
@@ -83,12 +84,14 @@ GitHubに、docsディレクトリごとコミットします。
 
 ## 公開したアプリ
 
-今回、nux.jsで作成したアプリケーションを、GitHub Pagesで公開しています。
+今回、nux.jsで作成したアプリケーションを GitHub Pages で公開しています。このデモページでは、ダークモードをオフにして、Helloというページを追加しています。
 
 - デモページ(GitHub Pages)  
   https://ycatch.github.io/vue-app/  
 - ソースコード(GitHub)  
   https://github.com/ycatch/vue-nuxt-app
+
+![./images/install_nuxtjs/demo-nuxt-project.png](https://storage.googleapis.com/zenn-user-upload/cvsdxuqjzg8nvr517vfcak76pbkk)
 
 
 ## 参考になるページ
