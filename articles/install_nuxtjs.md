@@ -3,7 +3,7 @@ title: "Nuxt.jsでアプリを作って、GitHub Pagesでデプロイする：Vu
 emoji: "🤖"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["vuejs","nuxtjs","github-pages"]
-published: false
+published: true
 ---
 
 このシリーズでは、Vue.jsを簡単なところから使い始めて、徐々に本格的に使う手順を記録しています。今回は、Vue.js製のアプリケーションフレームワークNuxt.jsを使い始める手順です。ほとんどは[公式サイトのチュートリアル](https://ja.nuxtjs.org/docs/2.x/get-started/installation)に書いてありますが、Github Pagesにデプロイするには、ちょっと工夫が必要です。
