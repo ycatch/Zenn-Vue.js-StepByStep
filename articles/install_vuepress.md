@@ -15,6 +15,8 @@ VuePressは、vue.jsによる静的サイトジェネレータです。特定の
 - VuePress
   https://vuepress.vuejs.org/
 
+![./images/install_vuepress/vuepress.png](https://storage.googleapis.com/zenn-user-upload/l5346siy7aa70dm5ogudxgm4c0f6)
+
 ## VurPressサイトを作る
 
 ### インストールする
@@ -122,6 +124,8 @@ $ yarn src:build
   https://ycatch.github.io/vue-press/
 - ソースコード(GitHub)  
   https://github.com/ycatch/vue-press
+
+![./images/install_vuepress/vuepress.png](https://storage.googleapis.com/zenn-user-upload/i8d8i51xwkp9zf94i1rx6m6757vp)
 
 
 ## 参考になるページ
