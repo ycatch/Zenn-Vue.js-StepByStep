@@ -2,7 +2,7 @@
 title: "Vutifiyとvee-validateを使ってみる：Vue.js Step by Step"
 emoji: "🤖"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: ["vuejs","vutifiy","veevalidation"]
+topics: ["vuejs","vutifiy","veevalidate"]
 published: true
 ---
 
