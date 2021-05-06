@@ -3,7 +3,7 @@ title: "VuePressを、GitHub Pagesでデプロイする：Vue.js Step by Step"
 emoji: "🤖"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["vuejs","vuepress","github-pages"]
-published: false
+published: true
 ---
 
 このシリーズでは、Vue.jsを簡単なところから使い始めて、徐々に本格的に使う手順を記録しています。Nuxt.jsを使うなら、いっそ静的サイトジェネレータのVuePressでいいんじゃないか。
