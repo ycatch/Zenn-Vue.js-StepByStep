@@ -1,5 +1,5 @@
 ---
-title: "VutifiyとVee-Validationを使ってみる：Vue.js Step by Step"
+title: "Vutifiyとvee-validateを使ってみる：Vue.js Step by Step"
 emoji: "🤖"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["vuejs","vutifiy","veevalidation"]
@@ -8,7 +8,7 @@ published: true
 
 このシリーズでは、簡単なところからVue.jsを使い始めて、徐々に本格的に使う手順を記録しています。[前回](./install_vuejs.md)は、Vue.jsを導入して、Vue CLIでつくったアプリをGithub Pagesでデプロイするところまでやりました。
 
-今回は、Vue用UIフレームワークである[Vuetify](https://vuetifyjs.com/en/)と、Formバリデーションライブラリの[Vee-Validation](https://vee-validate.logaretm.com/)を使ってみます。
+今回は、Vue用UIフレームワークである[Vuetify](https://vuetifyjs.com/en/)と、Formバリデーションライブラリの[vee-validate](https://vee-validate.logaretm.com/)を使ってみます。
 
 
 ## Vuetifyを使う
@@ -177,9 +177,9 @@ export default new Vuetify({
 
 ![./images/vutify_and_validation/color_theme.png](https://storage.googleapis.com/zenn-user-upload/m04o7n4g121x7l6dywkv2jfhsxtf)
 
-## Vee-Validationを使う
+## vee-validateを使う
 
-Formバリデーションライブラリの[Vee-Validation](https://vee-validate.logaretm.com/)を使うと、Formに入力した値をチェックできます。Vue.jsのバージョンに合わせて、Vee-Validationのバージョンが異なるので注意してください。
+Formバリデーションライブラリの[vee-validate](https://vee-validate.logaretm.com/)を使うと、Formに入力した値をチェックできます。Vue.jsのバージョンに合わせて、vee-validateのバージョンが異なるので注意してください。
 
 - VeeValidate v3 <= Vue.js Ver.2
   https://vee-validate.logaretm.com/v3/
@@ -189,7 +189,7 @@ Formバリデーションライブラリの[Vee-Validation](https://vee-validate
 
 ### 導入する
 
-Vee-Validationの導入は、これもVue CLIでライブラリを追加するだけ。
+vee-validateの導入は、これもVue CLIでライブラリを追加するだけ。
 
 ```bash
 $ yarn add vee-validate
@@ -197,13 +197,13 @@ $ yarn add vee-validate
 
 ### プリセットルールを利用する
 
-Vee-Validationは、標準的なルールを[プリセット](https://vee-validate.logaretm.com/v3/guide/rules.html#importing-the-rules)として用意しています。たとえば、次のようなルールを利用できます。
+vee-validateは、標準的なルールを[プリセット](https://vee-validate.logaretm.com/v3/guide/rules.html#importing-the-rules)として用意しています。たとえば、次のようなルールを利用できます。
 
 - 必須
 - 最小文字数、最大文字数
 - email形式
 
-Vee-Validationを使うには、script部分に次のように記述します。ここでは、最大文字数を規定するmaxを読み込んでいます。
+vee-validateを使うには、script部分に次のように記述します。ここでは、最大文字数を規定するmaxを読み込んでいます。
 
 ```js:src\components\HelloWorld.vue
 <script>
@@ -284,7 +284,7 @@ Vee-Validationを使うには、script部分に次のように記述します。
 
 ## 公開したアプリ
 
-VuetifyとVee-Validationを使ったアプリケーションを、GitHub Pagesで公開しています。
+Vuetifyとvee-validateを使ったアプリケーションを、GitHub Pagesで公開しています。
 
 - デモページ(Github Pages)
   https://ycatch.github.io/vuetify_app/
@@ -306,7 +306,7 @@ VuetifyとVee-Validationを使ったアプリケーションを、GitHub Pages�
   https://qiita.com/yusuke-ka/items/80dd90307e2b5debf5b8
 
 
-### Vee-Validation
+### vee-validate
 
 - Vuelidate | A Vue.js model validation library
   https://vuelidate.js.org/
