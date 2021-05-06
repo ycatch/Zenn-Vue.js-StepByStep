@@ -111,10 +111,3 @@ GitHubに、docsディレクトリごとコミットします。
 - GitHub PagesとNuxt.jsでポートフォリオ公開 - Qiita
   https://qiita.com/Anderiens/items/a4c5783b5197de682329
 
-### Vuetify
-
-- Nuxt.js + Vuetify でサクッと管理画面をつくってみた ｜ もふもふ技術部
-  https://tech.mof-mof.co.jp/blog/nuxt-vuetify/
-
-- Nuxt.jsでVuetifyを使う(with vue-property-decorator) | DevelopersIO
-  https://dev.classmethod.jp/articles/try-nuxt-ts-vuetify/
