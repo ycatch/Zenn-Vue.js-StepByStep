@@ -3,15 +3,17 @@ title: "Nuxt.jsで管理画面を作って、GitHub Pagesでデプロイする�
 emoji: "🤖"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["nuxtjs","管理画面","github-pages"]
-published: true
+published: false
 ---
 
-このシリーズでは、Vue.jsを簡単なところから使い始めて、徐々に本格的に使う手順を記録しています。
+このシリーズでは、Vue.jsを簡単なところから使い始めて、徐々に本格的に使う手順を記録しています。今回は、Nuxt.jsとmaterial designを使った管理画面を作ります。そのために、nuxt-material-admin を使います。
+
+![./images/nuxt-material-admin/demo-nuxt-admin.png](https://storage.googleapis.com/zenn-user-upload/cvsdxuqjzg8nvr517vfcak76pbkk)
 
 
 ## プロジェクトのセットアップ
 
-Vue-CLIで、簡単に
+Vue-CLIで、簡単にセットアップできます。
 
 ```
 $ vue init moeddami/nuxt-material-admin my-project
@@ -27,11 +29,25 @@ localhost:3000 で動作確認できます。
 $ yarn dev
 ```
 
-### Github Pagesでデプロイする
+## Github Pagesでデプロイする
 
-Nuxt.jsで作ったアプリをGithub Pagesでデプロイする場合、masterブランチのdocsディレクトリを公開するのが簡単だと思います。
+Github Pagesでデプロイするため、nuxt.config.js の設定を変更します。実際の nuxt.config.js は、以下を参照してください。
 
-そこで、ビルド先をdocsにするよう、nuxt.config.jsに generate: を追加します。
+-[nuxt.config.js](https://github.com/ycatch/nuxt-material-admin/blob/main/nuxt.config.js)
+
+### mode: を ssr: に変更する
+
+nuxt.jsでは、modeオプションが非奨励なので、ssrオプションに修正します。
+
+```js:nuxt.config.js
+module.exports = {
+//mode: 'spa',
+  ssr: false,
+```
+
+### babel: を設定する
+
+Nuxt.jsで、BabelのWarningが大量に出るので、build:オプションに '@babel/plugin-proposal-private-methods' を設定します。
 
 ```js:nuxt.config.js
   /*
@@ -46,6 +62,10 @@ Nuxt.jsで作ったアプリをGithub Pagesでデプロイする場合、master�
       }
     },
 
+    babel: {
+        plugins: [['@babel/plugin-proposal-private-methods', { loose: true }]],
+    },
+
     /*
     ** You can extend webpack config here
     */
@@ -53,11 +73,31 @@ Nuxt.jsで作ったアプリをGithub Pagesでデプロイする場合、master�
 
     }
   },
+```
 
+### router: を設定する
+
+Githubのリポジトリ名を router: の base: オプションに設定します。前後のスラッシュを忘れずに。
+
+```js:nuxt.config.js
+  router: {
+    base: '/<repository-name>/'
+  },
+```
+
+### ビルド先を指定する
+
+Nuxt.jsで作ったアプリをGithub Pagesでデプロイする場合、masterブランチのdocsディレクトリを公開するのが簡単だと思います。
+
+そこで、ビルド先をdocsにするよう、nuxt.config.jsに generate: を追加します。
+
+```js:nuxt.config.js
   generate: {
     dir: 'docs'
   }
 ```
+
+### ビルドする
 
 それから、公開するファイルをビルドします。
 
@@ -67,7 +107,7 @@ $ yarn build
 
 これで、docs ディレクトリに静的ファイルが生成されました。
 
-GitHubに、docsディレクトリごとコミットします。
+あとは、GitHubに docsディレクトリごとコミットします。そして、Github pagesで公開します。
 
 
 ## 公開したアプリ
@@ -75,11 +115,9 @@ GitHubに、docsディレクトリごとコミットします。
 今回、作成した管理画面を GitHub Pages で公開しています。
 
 - デモページ(GitHub Pages)  
-  https://ycatch.github.io/vue-app/  
+  https://ycatch.github.io/nuxt-material-admin/  
 - ソースコード(GitHub)  
-  https://github.com/ycatch/vue-nuxt-app
-
-![./images/install_nuxtjs/demo-nuxt-project.png](https://storage.googleapis.com/zenn-user-upload/cvsdxuqjzg8nvr517vfcak76pbkk)
+  https://github.com/ycatch/nuxt-material-admin
 
 
 ## 参考になるページ
@@ -88,5 +126,5 @@ GitHubに、docsディレクトリごとコミットします。
   https://github.com/moeddami/nuxt-material-admin/
 
 - Vue-CLI Boilerplate based on Nuxt and vue-material-admin template
-https://vuejsexamples.com/vue-cli-boilerplate-based-on-nuxt-and-vue-material-admin-template/
+  https://vuejsexamples.com/vue-cli-boilerplate-based-on-nuxt-and-vue-material-admin-template/
 
