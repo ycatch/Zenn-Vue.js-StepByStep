@@ -59,15 +59,15 @@ http://localhost:3000/ に、こんなアプリができています。ここで
 
 Nuxt.jsで作ったアプリをGithub Pagesでデプロイする場合、masterブランチのdocsディレクトリを公開するのが簡単だと思います。
 
-そこで、ビルド先をdocsにするよう、nuxt.config.jsに次のコードを追加します。
+そこで、ビルド先をdocsにするよう、nuxt.config.jsに次のコードを追加します。base: には、Githubのリポジトリ名を指定します。両端のスラッシュを忘れずに。
 
 ```js:nuxt.config.js
   router: {
-  base: '/vue-nuxt-app/'
+    base: '/my-nuxt-project/'
   },
 
   generate: {
-  dir: 'docs'
+    dir: 'docs'
   },
 }
 ```
