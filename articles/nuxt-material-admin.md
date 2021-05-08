@@ -8,12 +8,17 @@ published: false
 
 このシリーズでは、Vue.jsを簡単なところから使い始めて、徐々に本格的に使う手順を記録しています。今回は、Nuxt.jsとmaterial designを使った管理画面を作ります。そのために、nuxt-material-admin を使います。
 
-![./images/nuxt-material-admin/demo-nuxt-admin.png](https://storage.googleapis.com/zenn-user-upload/cvsdxuqjzg8nvr517vfcak76pbkk)
+- moeddami / nuxt-material-admin 
+  https://github.com/moeddami/nuxt-material-admin/
+
+![./images/nuxt-material-admin/demo_admin.png](https://storage.googleapis.com/zenn-user-upload/ryxqcxemyr45ec2ra0kumln2s37l)
+
+こんな感じで、複数ページの管理画面ができあがります。
 
 
-## プロジェクトのセットアップ
+## nuxt-material-adminのセットアップ
 
-Vue-CLIで、簡単にセットアップできます。
+nuxt-material-adminは、Vue-CLIで、簡単にセットアップできます。
 
 ```bash
 $ vue init moeddami/nuxt-material-admin my-project
@@ -121,13 +126,4 @@ $ yarn build
   https://ycatch.github.io/nuxt-material-admin/  
 - ソースコード(GitHub)  
   https://github.com/ycatch/nuxt-material-admin
-
-
-## 参考になるページ
-
-- moeddami / nuxt-material-admin 
-  https://github.com/moeddami/nuxt-material-admin/
-
-- Vue-CLI Boilerplate based on Nuxt and vue-material-admin template
-  https://vuejsexamples.com/vue-cli-boilerplate-based-on-nuxt-and-vue-material-admin-template/
 
