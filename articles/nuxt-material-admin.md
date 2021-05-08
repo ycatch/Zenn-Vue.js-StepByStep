@@ -15,7 +15,7 @@ published: false
 
 Vue-CLIで、簡単にセットアップできます。
 
-```
+```bash
 $ vue init moeddami/nuxt-material-admin my-project
 $ cd my-project
 $ yarn install
@@ -25,19 +25,17 @@ $ yarn install
 
 localhost:3000 で動作確認できます。
 
-```
+```bash
 $ yarn dev
 ```
 
 ## Github Pagesでデプロイする
 
-Github Pagesでデプロイするため、nuxt.config.js の設定を変更します。実際の nuxt.config.js は、以下を参照してください。
-
--[nuxt.config.js](https://github.com/ycatch/nuxt-material-admin/blob/main/nuxt.config.js)
+Github Pagesでデプロイするため、nuxt.config.js の設定を変更します。
 
 ### mode: を ssr: に変更する
 
-nuxt.jsでは、modeオプションが非奨励なので、ssrオプションに修正します。
+nuxt.jsでは、modeオプションが非奨励なので、ssrオプションに変更します。
 
 ```js:nuxt.config.js
 module.exports = {
@@ -47,7 +45,7 @@ module.exports = {
 
 ### babel: を設定する
 
-Nuxt.jsで、BabelのWarningが大量に出るので、build:オプションに '@babel/plugin-proposal-private-methods' を設定します。
+Nuxt.jsで、BabelのWarningが大量に出るので、build:オプションに babel: オプションを設定します。
 
 ```js:nuxt.config.js
   /*
@@ -97,11 +95,16 @@ Nuxt.jsで作ったアプリをGithub Pagesでデプロイする場合、master�
   }
 ```
 
+実際の nuxt.config.js は、以下を参照してください。
+
+- [nuxt.config.js](https://github.com/ycatch/nuxt-material-admin/blob/main/nuxt.config.js)
+
+
 ### ビルドする
 
 それから、公開するファイルをビルドします。
 
-```
+```bash
 $ yarn build
 ```
 
