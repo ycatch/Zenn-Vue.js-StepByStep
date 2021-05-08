@@ -55,7 +55,7 @@ http://localhost:3000/ に、こんなアプリができています。ここで
 ![./images/install_nuxtjs/my-nuxt-project.png](https://storage.googleapis.com/zenn-user-upload/3xjfj9tkr89n3yidgajuiu4t9u48)
 
 
-### Github Pagesでデプロイする
+## Github Pagesでデプロイする
 
 Nuxt.jsで作ったアプリをGithub Pagesでデプロイする場合、masterブランチのdocsディレクトリを公開するのが簡単だと思います。
 
