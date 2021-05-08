@@ -3,7 +3,7 @@ title: "Nuxt.jsで管理画面を作って、GitHub Pagesでデプロイする�
 emoji: "🤖"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["nuxtjs","管理画面","github-pages"]
-published: false
+published: true
 ---
 
 このシリーズでは、Vue.jsを簡単なところから使い始めて、徐々に本格的に使う手順を記録しています。今回は、Nuxt.jsとmaterial designを使った管理画面を作ります。そのために、nuxt-material-admin を使います。
