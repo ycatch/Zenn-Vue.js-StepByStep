@@ -3,6 +3,7 @@ title: "けっこう使える！生成AIでインタビュー記事を書く8つ
 emoji: "🤖"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["AI","document","writing","interview"]
+publication_name: "sakura_internet"
 published: true
 ---
 
